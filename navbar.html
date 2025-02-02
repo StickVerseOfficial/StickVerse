@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">STICKVERSE</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Avatar</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#" class="login-btn" onclick="openPopup('login')">Login</a>
+            <a href="#" class="signup-btn" onclick="openPopup('signup')">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Login & Sign Up Popups -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-box">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="popup-action-btn">Login</button>
+            <p id="popup-toggle-text">Don't have an account? <a href="#" onclick="togglePopup()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
